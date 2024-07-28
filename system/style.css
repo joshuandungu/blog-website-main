@@ -1,0 +1,551 @@
+body{
+	height: 1200px;
+	background-image:url(images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.container{
+	width: 1100px;
+	height: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	border-style: none;
+	border-color: rgba(165, 42, 42, 0.363);
+}
+header{
+	width:1100px;
+	height: 100px;
+	background-color: rgba(0, 47, 255, 0.39);
+	text-align: center;
+	/* position: fixed; */
+	position: static;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px , 10px;
+}
+nav{
+	width: 1100px;
+	height: auto;
+	background-color: rgba(146, 206, 67, 0.973);
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-color: blanchedalmond;
+	position: relative;
+}
+nav a {
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	font-weight: 100;
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+}
+nav a:active{
+	background-color: rgba(255, 255, 0, 0.692);
+	transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	color:white;
+}
+nav a:hover{
+	background-color: white;
+	transition-duration: 0ms;
+	cursor: grab;
+}
+
+.search-bar{
+	width:70px;
+	height:70px;
+	text-align: center;
+	float: center;
+	background-color: white;
+	margin-right: auto;
+	margin-left: auto;
+	position: absolute;
+}
+/* Style for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 50px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Style for the search input */
+.search-container input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none; /* Remove the input outline when focused */
+}
+
+/* Style for the search button */
+.search-container .search-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-left: 10px; /* Adjust the margin as needed */
+    cursor: pointer;
+    font-size: 10px;
+    outline: none; /* Remove the button outline when focused */
+}
+
+/* Hover effect for the search button */
+.search-container .search-button:hover {
+    background-color: #2980b9;
+}
+
+/* Optional: Focus effect for the search input */
+.search-container input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px #3498db;
+}
+
+main{
+	width: 770px;
+	height: 1000px;
+	text-align: center;
+	overflow: scroll;
+	margin-left: 130px;
+	margin-right: auto;
+	background-color: azure;
+}
+.sidebar{
+	width:130px;
+	height:1000px;
+	background-color: white;
+	overflow: auto;
+	border-style: none;
+	float: left;
+	
+}
+.aside{
+	width:200px;
+	height: 995px;
+	background-color: rgba(128, 0, 128, 0.253);
+	border-radius: 10px;
+	border-style: inherit;
+	float:right;
+	overflow: scroll;
+}
+.comments{
+	height:200px;
+	width:800px;
+	background-color: rgba(39, 129, 207, 0.425);
+	border-style: dashed;
+	border-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	float: center;
+
+}
+
+.form-search{
+	width:250px;
+	height:150px;
+	background-color: #777;
+	float: center;
+	/* overflow: auto; */
+	margin: auto; 
+	border-radius: 10px;
+	border-style: ridge;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.form-seach button {
+	width:20px;
+	height: fit-content;
+	background-color: #4CAF50;
+	float:center;
+	border-radius: 10px;
+	border-style: groove;
+	text-align: center;
+
+}
+.form-seach button:hover{
+	background-color: yellow;
+	transition:ease-in-out;
+}
+.form-container {
+	width: 400px;
+	height: 1000px;
+	background-color: rgba(99, 45, 91, 0.034);
+	overflow: auto;
+	float: center;
+	margin: 20px auto;
+	border-radius: 10px;
+	border-style: groove;
+	box-sizing: border-box;
+}
+.form-group{
+	padding: 40px 20px 20px 20px;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	color: black;
+	font-size: 25px;
+	float: center;
+
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+/* form h1, input[type=text], input[type=password], input[type=number]{
+    display: inline-block;
+    text-align: center;
+} */
+ form input[type=text],input[type=email], input[type=password],input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid red;
+}
+ form input[type=text], input[type=email], input[type=password]:focus {
+    background-color: rgba(10, 165, 48, 0.548);
+    border: 3px solid #555;
+}
+
+form input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+ button {
+    background-color: rgba(255, 153, 0, 0.438);
+    border-radius: 10px;
+    height: 50px;
+    width: 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    
+}
+button :hover{
+    background-color: rgba(240, 140, 235, 0.562);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+ /* .search  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+ .search  input[type=text]:focus {
+    width: 100%;
+} */
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}.dropdown-button {
+	background-color: #3498db;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Style for the drop-down content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Style for the drop-down items */
+.dropdown-item {
+	padding: 10px;
+	text-decoration: none;
+	display: block;
+	color: #333;
+}
+
+/* Hover effect for the drop-down items */
+.dropdown-item:hover {
+	background-color: #ddd;
+}
+
+/* Show the drop-down content when hovering over the button */
+.dropdown-button:hover .dropdown-content {
+	display: block;
+}
+
+.floating-box {
+    float: left;
+    width: 190px;
+    height: 300px;
+    margin: 10px;
+    border: 3px solid #73AD21;  
+}
+
+.after-box {
+    clear: left;
+    border: 3px solid red;      
+}
+.floating-box:hover{
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+	background-color: grey;
+}
+
+/* Container styles */
+.view-box {
+    max-width: 500px; /* Adjust the maximum width to your preference */
+	height: auto;
+	align-items: center;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #ffffff; /* Background color for the container */
+    border: 1px solid #dddddd; /* Optional border */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional box shadow */
+    border-radius: 5px; /* Optional border radius for rounded corners */
+}
+
+/* Text styles within the container */
+.view-box h1 {
+    font-size: 24px; /* Adjust the font size */
+    color: #333333; /* Text color */
+    margin-bottom: 10px; /* Spacing between headings and other elements */
+}
+
+.view-box p {
+    font-size: 16px; /* Adjust the font size */
+    color: #666666; /* Text color */
+}
+
+/* Image styles within the container */
+.view-box img {
+    /* max-width: 100%; Ensure images don't exceed the container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove any extra spacing below images */
+    margin: 0 auto 20px; /* Center the image horizontally and add spacing below it */
+}
+footer{
+	width: 1100px;
+	height: 250px;
+	text-align: center;
+	/* overflow: auto; */
+	background-color: rgba(0, 0, 0, 0.562);
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Style for the footer container */
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Style for the footer logo */
+.footer-logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style for the footer links */
+.footer-links {
+    flex: 1;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ff9900;
+}
+
+/* Style for the footer social icons */
+.footer-social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+/* Style for the footer info */
+.footer-info {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
+
+/* Style for the copyright text */
+.footer-info p:last-child {
+    font-size: 14px;
+}
+
+.search_button.button{
+	background-color: rgba(255, 153, 0, 0.438);
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.search_button.button :hover{
+    background-color: rgba(240, 140, 235, 0.562);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+table {
+	border: striped;
+}
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 235px;
+	height: fit-content;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+	color: #9acd32;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+	.container {
+	  width: 95%;
+	  max-width: none;
+	}
+	header {
+		width:100%;
+	}
+	nav {
+	  width: 100%;
+	}
+	.search-bar {
+	  width: 100%;
+	}
+	footer {
+		width :100%;
+	}
+	main {
+	  width: 100%;
+	}
+	.sidebar,
+	.aside {
+	  width: 100%;
+	  float: none;
+	}
+  }
+
+
